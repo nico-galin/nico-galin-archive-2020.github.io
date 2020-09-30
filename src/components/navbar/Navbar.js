@@ -15,10 +15,10 @@ const Toolbar = (props) => {
         </div>
         <div className={styles.toolbar_nav_items}>
           <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="/work">work</a></li>
-            <li><a href="/resume">resume</a></li>
-            <li><a href="/contact">contact</a></li>
+            <li><a href={process.env.PUBLIC_URL+'/'}>home</a></li>
+            <li><a href={process.env.PUBLIC_URL+'/work'}>work</a></li>
+            <li><a href={process.env.PUBLIC_URL+'/resume'}>resume</a></li>
+            <li><a href={process.env.PUBLIC_URL+'/contact'}>contact</a></li>
           </ul>
         </div>
       </nav>

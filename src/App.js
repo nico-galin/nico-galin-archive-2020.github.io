@@ -38,10 +38,10 @@ export default class App extends Component {
           </header>
           {backdrop}
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/work' component={Work} />
-            <Route exact path='/resume' component={Resume} />
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path={process.env.PUBLIC_URL+'/'} component={Home} />
+            <Route exact path={process.env.PUBLIC_URL+'/work'} component={Work} />
+            <Route exact path={process.env.PUBLIC_URL+'/resume'} component={Resume} />
+            <Route exact path={process.env.PUBLIC_URL+'/contact'} component={Contact} />
           </Switch>
         </div>
       </Router>
