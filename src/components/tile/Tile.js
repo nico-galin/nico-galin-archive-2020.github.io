@@ -8,6 +8,7 @@ export function Tile(props) {
       src={require("./../../res/".concat(props.image))} 
       className={`${styles.image} ${props.type === "content" ? styles.image_margins : null}`} 
       alt={props.image}
+      width={props.type === "content" ? 100 : null}
     />
   }
   return (

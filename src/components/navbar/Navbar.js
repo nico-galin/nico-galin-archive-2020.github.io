@@ -11,7 +11,7 @@ const Toolbar = (props) => {
         <div className={styles.toolbar_heading}>
           <a href="/">
             <h1>nico galin.</h1>
-            <h5>code | design</h5>
+            <h5>code | design (beta)</h5>
           </a>
         </div>
         <div className={styles.toolbar_nav_items}>
