@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.scss';
-import DrawerToggle from '../sideDrawer/DrawerToggle'
+import DrawerToggle from '../sideDrawer/DrawerToggle';
+import { HashROuter, Route, Link } from 'react-router-dom';
 
 const Toolbar = (props) => {
   return (
@@ -15,10 +16,10 @@ const Toolbar = (props) => {
         </div>
         <div className={styles.toolbar_nav_items}>
           <ul>
-            <li><a href={process.env.PUBLIC_URL+'/'}>home</a></li>
-            <li><a href={process.env.PUBLIC_URL+'/work'}>work</a></li>
-            <li><a href={process.env.PUBLIC_URL+'/resume'}>resume</a></li>
-            <li><a href={process.env.PUBLIC_URL+'/contact'}>contact</a></li>
+            <li><Link to='/'>home</Link></li>
+            <li><Link to='/work'>work</Link></li>
+            <li><Link to='/resume'>resume</Link></li>
+            <li><Link to='/contact'>contact</Link></li>
           </ul>
         </div>
       </nav>
