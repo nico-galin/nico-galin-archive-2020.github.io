@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.scss';
 import DrawerToggle from '../sideDrawer/DrawerToggle';
-import { HashROuter, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Toolbar = (props) => {
   return (
