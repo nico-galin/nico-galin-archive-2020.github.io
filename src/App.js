@@ -3,6 +3,8 @@ import { Tile } from './components/tile/Tile';
 import Navbar from './components/navbar/Navbar';
 import SideDrawer from './components/sideDrawer/SideDrawer';
 import Backdrop from './components/backdrop/Backdrop';
+import { BrowserRouter, BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './components/Home/Home';
 import './App.scss';
 
 export default class App extends Component {
@@ -131,7 +133,10 @@ export default class App extends Component {
               image = "jobylogo.png"
               title = "Software Engineering Intern"
               subTitle = "Joby Aviation"
-              description = "Random description here"
+              description = "Developing front and back end for a mobile application using the
+              Cordova and React Native frameworks with database access using
+              RESTful APIs, NodeJS, and GraphQL. Worked under SCRUM/AGILE
+              development environment."
               underContent = "June 2018 - May 2020 (2yr)"
               externalUrl = "https://www.instagram.com/noir.graphics/"
             />
