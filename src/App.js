@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import { Tile } from './components/tile/Tile';
 import Navbar from './components/navbar/Navbar';
 import SideDrawer from './components/sideDrawer/SideDrawer';
 import Backdrop from './components/backdrop/Backdrop';
-import { BrowserRouter, BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Work from './components/Work/Work';
 import Resume from './components/Resume/Resume';
@@ -26,7 +25,6 @@ export default class App extends Component {
   }
 
   render() {
-    let sideDrawer;
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop onClick={this.backdropClickHandler}/>
