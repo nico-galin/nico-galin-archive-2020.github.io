@@ -13,15 +13,15 @@
   @include gradientBackground(#833AB4, #e1306c);
   color: white;
   font-size: larger;
-  height: 10em;
+  height: 8em;
 
   &:before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
-    height: 3em;
+    height: 4em;
     background: #313131;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
     text-shadow: 0 -20px 10px rgba(0,0,0,0.8);
@@ -31,6 +31,15 @@
     color: white;
     text-decoration: none;
   }
+
+  h1 {
+    margin-bottom: 0
+  }
+
+  h5 {
+    margin-top: 0.2em;
+  }
+
 }
 
 

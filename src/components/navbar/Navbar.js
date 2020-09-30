@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './Toolbar.module.scss';
+import styles from './Navbar.module.scss';
 import DrawerToggle from '../sideDrawer/DrawerToggle'
-import Icon from '@material-ui/core/Icon';
 
 const Toolbar = (props) => {
   return (
