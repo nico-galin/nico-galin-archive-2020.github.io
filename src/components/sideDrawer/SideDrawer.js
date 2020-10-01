@@ -6,10 +6,10 @@ const SideDrawer = (props) => (
     <nav className={`${styles.side_drawer} ${props.visible ? styles.open : ""}`}>
         <ul>
             <li><a href="/"><h1 href="/">nico galin.</h1></a></li>
-            <li><Link to='/'>home</Link></li>
-            <li><Link to='/work'>work</Link></li>
-            <li><Link to='/resume'>resume</Link></li>
-            <li><Link to='/contact'>contact</Link></li>
+            <li><Link to='/' onClick={props.onClick}>home</Link></li>
+            <li><Link to='/work' onClick={props.onClick}>work</Link></li>
+            <li><Link to='/resume' onClick={props.onClick}>resume</Link></li>
+            <li><Link to='/contact' onClick={props.onClick}>contact</Link></li>
         </ul>
     </nav>
 );

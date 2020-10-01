@@ -27,6 +27,7 @@
 
   @media screen and (max-width: 768px) {
     margin: 10px;
+    font-size: smaller;
   }
 
 }
@@ -39,7 +40,7 @@ a {
 .container_image {
   width: 200px;
   @media screen and (max-width: 768px) {
-    width: 150px
+    width: 120px;
   }
 }
 
@@ -49,6 +50,9 @@ a {
 
 .container_heading {
   width: 440px;
+  @media screen and (max-width: 768px) {
+    width: 260px
+  }
 }
 
 .image {

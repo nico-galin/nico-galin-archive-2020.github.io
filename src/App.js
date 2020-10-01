@@ -34,7 +34,7 @@ export default class App extends Component {
         <div className="app">
           <header>
             <Navbar drawerToggleHandler={this.drawerToggleHandler}/>
-            <SideDrawer visible={this.state.sideDrawerOpen} />
+            <SideDrawer visible={this.state.sideDrawerOpen} onClick={this.drawerToggleHandler} />
           </header>
           {backdrop}
           <Switch>
