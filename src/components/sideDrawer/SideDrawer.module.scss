@@ -4,6 +4,8 @@
     left: 0;
     height: 100%;
     width: 45vw;
+    padding: 1em;
+    max-width: 350px;
     background-color: #262626;
     z-index: 200;
     transform: translateX(-100%);
@@ -18,14 +20,15 @@
     }
 
     li {
+        display: flex;
         text-align: left;
-        padding: 1em 0 1em 2em;
+        padding: 1em 0 1em 1em;
         width: 100%;
         box-sizing: border-box;
         transition: all 0.3s ease-out;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 
@@ -38,7 +41,6 @@
     h1 {
         color: white;
     }
-
 }
 
 .open {
