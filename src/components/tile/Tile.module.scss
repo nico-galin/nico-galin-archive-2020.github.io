@@ -25,9 +25,17 @@
     cursor: pointer;;
   }
 
+  h2 {
+    padding: 0.5em;
+  }
+
   @media screen and (max-width: 768px) {
     margin: 8px;
     font-size: smaller;
+
+    h2 {
+      font-size: medium;;
+    }
   }
 
 }
