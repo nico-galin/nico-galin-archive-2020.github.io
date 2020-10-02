@@ -4,7 +4,7 @@ import '../../App.scss';
 
 const Home = (props) => (
     <div className="page_container">
-        <h1 className="page_title">featured</h1>
+        <h1 className="page_title">featured work</h1>
         <div className="montage_container">
             <Tile 
                 type = "image"
