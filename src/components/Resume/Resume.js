@@ -18,9 +18,9 @@ export default function Resume(props) {
                         type = "content"
                         image = "ucberkeley_seal.png"
                         title = "University of California, Berkeley"
-                        subTitle = "B.A. Computer Science, Data Science | 3.714"
+                        subTitle = "B.A. Computer Science, Data Science | 3.763"
                         descriptions = {["Coursework | Data Structures, Machine Structures, Discrete Mathematics and Probability Theory, The Structure and Interpretation of Computer Programs, Designing Information Devices and Systems, Foundations of Data Science, Human Contexts and Ethics of Data",
-                            "Organizations | Alpha Tau Omega Fraternity, Cubstart DeCal"
+                            "Organizations | Alpha Tau Omega Fraternity, Cubstart DeCal, sproul.club"
                         ]}
                         underContent = "Class of 2023"
                         externalUrl = "https://www.berkeley.edu/"
@@ -56,7 +56,7 @@ export default function Resume(props) {
                     <Tile 
                         type = "content"
                         title = "Software Engineering Intern"
-                        subTitle = "SummerBio."
+                        subTitle = "SummerBio"
                         descriptions = {["Designed and implemented a mobile cross-platform app in Capacitor/AngularJS, HTML, SCSS, and Adobe XD for personal COVID-19 test submission and expedited test result delivery.",
                             "Tested and modified multiple contact tracing applications implementing Google/Apple’s API and the TCN Bluetooth Protocol for internal use.",
                             "Published COVID-19 test management app to beta testers on iOS and Android.",

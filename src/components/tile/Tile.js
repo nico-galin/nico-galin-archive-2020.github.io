@@ -1,3 +1,4 @@
+import { StayCurrentLandscapeSharp } from '@material-ui/icons';
 import React from 'react';
 import styles from './Tile.module.scss';
 
@@ -6,7 +7,7 @@ export function Tile(props) {
   if (props.image && (props.type === "image" || props.type === "content" && window.innerWidth > 768)) {
     img = <img 
       src={require("./../../res/".concat(props.image))} 
-      className={`${styles.image} ${props.type === "content" ? styles.image_margins : null}`} 
+      className={`${styles.image} ${props.type === "content" ? styles.image_margins : null} ${!props.underContent ? styles.image_only: null}`} 
       alt={props.image}
       width={props.type === "content" ? 60 : null}
     />
@@ -31,9 +32,10 @@ export function Tile(props) {
             </div>
           : null }
         </div>
-        <div className={styles.underContent}>
+        {props.underContent ? <div className={styles.underContent}>
           <b>{props.underContent}</b>
         </div>
+        : null}
     </a>
   );
 }
